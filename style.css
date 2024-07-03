@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bgcolor: rgb(16, 93, 138);
+  --color: white;
+  --fsize: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--bgcolor);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.profile_info {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.profile_info h2 {
+  text-transform: capitalize;
+  font-size: var(--fsize);
+}
+
+.profile_info p {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  line-height: 50px;
+}
+
+.profile_info p span {
+  font-weight: 700;
+}
+
+section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.goals {
+  padding: 24px 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.goals h3{
+  font-size: 1.2rem;
+}
+
+.goals p {
+  line-height: 35px;
+  word-spacing: 2px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+#learn_more {
+  font-size: 2rem;
+  /* text-transform: capitalize; */
+}
+
+footer {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+  color: var(--color);
+}
+
+.goal_info {
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 767px) {
+  .profile_info {
+    flex-direction: column;
+  }
+
+  .profile_info .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .profile_info .image img {
+    max-width: 528px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* tablet responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile_info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile_info .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .profile_info .image img {
+    max-width: 528px;
+    width: 100%;
+  }
+}
